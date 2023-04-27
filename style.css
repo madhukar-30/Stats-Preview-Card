@@ -7,21 +7,23 @@
     ---Dark-desaturated-blue: hsl(244, 38%, 16%);
     /* (accent) */
     --Soft-violet: hsl(277, 64%, 61%);
-   
 
-   /* (main heading, stats) */
+
+    /* (main heading, stats) */
     --White: hsl(0, 0%, 100%);
     /* (main paragraph) */
     --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
     /* (stat headings) */
     --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
 }
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -29,73 +31,177 @@ body{
     font-size: 15px;
     background-color: var(--Very-dark-blue);
 }
-.intro{
-    display: flex;
 
-   
-    /* width:1210px; */
-    width:78vw;
-    height:500px;
+.intro {
+    display: flex;
+    width: 78vw;
+    height: 450px;
     border-radius: 0.5rem;
     overflow: hidden;
 }
-.about{
+
+.about {
     max-width: 50%;
-    padding:4rem 6.5rem;
+    /* padding: 3rem 4rem 0 5rem; */
     background-color: var(---Dark-desaturated-blue);
+
 }
 
-/* .img{
-    display: block;
-    max-width:50%;
-    object-fit: cover;
-    background-color: var(--Soft-violet);
+
+.img-container {
+    width: 50%;
     position: relative;
-} */
-.img-container{
-  width:50%;
+
+}
+
+.img-container img {
     height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
 
- background: var(--Soft-violet) url("img/image-header-desktop.jpg") no-repeat ;
- background-size: cover;
- background-blend-mode:multiply;
- /* background-color: var(--Soft-violet); */
+}
+
+.img-container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Soft-violet);
+    mix-blend-mode: multiply;
+
+}
+
+.img-container img.mobile-img {
+    display: none;
 }
 
 
 
-header{
- font-family: 'Inter', sans-serif;
-  font-size: 1.5rem;
- color:var(--White);
- margin-bottom:1.7rem;
+header {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    color: var(--White);
+    margin-bottom: 1.5rem;
+    margin: 3rem 5rem 1rem 3.5rem;
+
 }
-header span{
-    color:var(--Soft-violet);
+
+header span {
+    color: var(--Soft-violet);
 }
-p.main-para{
-    color:var(--Slightly-transparent-white);
-    font-size: 1.2rem;
+
+p.main-para {
+    color: var(--Slightly-transparent-white);
+    font-weight: 400;
     line-height: 1.5rem;
-    
-}
-.stats-container{
-    display: flex;
-    justify-content: space-between;
-   margin-top: 7.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 1rem 9rem 5.5rem 3.5rem;
+
 
 }
+
+.stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+/* .stats-container-box{
+ 
+} */
+/* .stats-container-box:not(:last-child){
+    margin-right:2.5rem;
+} */
 
 /* //////////////utiliy class for stats/////////////////// */
-.stats-count{
-    color:var(--White);
-  font-size: 1.5rem;
- 
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
- }
- .stats-name{
+.stats-count {
+    color: var(--White);
+    font-size: 1.5rem;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.stats-name {
     text-transform: uppercase;
-    color:var(--slightly-transparent-white);
-  font-family: 'Lexend Deca', sans-serif;
- }
+    color: var(--slightly-transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media screen and (max-width:900px) {
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        max-width: 90vw;
+        height: 100%;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .img-container img.desktop-img {
+        display: none;
+    }
+
+    .img-container img.mobile-img {
+        display: block;
+    }
+
+    .about {
+
+        max-width: 100%;
+        height: 50%;
+
+
+    }
+    p.main-para {
+     
+        margin:2rem ;
+       
+    
+    }
+
+    header {
+        margin: 1.5rem;
+
+    }
+
+    .stats-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+
+    }
+
+    .stats-container-box {
+        margin-bottom: 2rem;
+    }
+
+    .img-container {
+        width: 100%;
+        height: 50%;
+        position: relative;
+
+    }
+}
+
+
+@media screen and (min-width:900px)and (max-width:1245px) {
+    header {
+        margin: 3rem 3rem 1rem 3rem;
+    }
+
+    p.main-para {
+        margin: 1rem 3rem 0.5rem 3rem;
+    }
+
+
+
+}

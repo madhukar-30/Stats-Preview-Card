@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/madhukar-30/Stats-Preview-Card.git)
-- Live Site URL: [Add live site URL here](https://644a4e2d413465705cbba46c--magical-mochi-275e47.netlify.app/)
+- Solution URL: [ solution URL here](https://github.com/madhukar-30/Stats-Preview-Card.git)
+- Live Site URL: [live site URL here](https://644a4e2d413465705cbba46c--magical-mochi-275e47.netlify.app/)
 
 ## My process
 

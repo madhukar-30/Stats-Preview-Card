@@ -53,7 +53,7 @@ I learned the blend property of css.
 - [Blend property](https://web.dev/learn/css/blend-modes/#:~:text=The%20mix%2Dblend%2Dmode%20applies,to%20blend%20into%20each%20other.) -This helped me to understand blend property.
 
 ## Author
-- Frontend Mentor - [@master-manas](https://www.frontendmentor.io/profile/master-manas)
+- Frontend Mentor - [@madhukar-30](https://www.frontendmentor.io/profile/madhukar-30)
 
 
 
